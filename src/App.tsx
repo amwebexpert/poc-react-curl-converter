@@ -8,7 +8,8 @@ function App() {
   const [converted, setConverted] = React.useState("");
 
   const convert = () => {
-    const result = curlconverter.toJavaScript(curlCommand);
+    // const result = curlconverter.toJavaScript(curlCommand);
+    const result = curlconverter.toDart(curlCommand);
     setConverted(result);
   };
 
